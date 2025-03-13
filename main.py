@@ -7,7 +7,7 @@ from cryptography.fernet import Fernet
 from termcolor import colored
 import base64
 
-API_KEY = "1b65377db6fc7106e8267a15e560484a58bd18ec7df637c095bd9bc92892a342"
+API_KEY = "Your api key"
 VT_URL = "https://www.virustotal.com/api/v3/files/"
 DEFAULT_DIR = "/etc/init.d"
 LOG_PATH = "/var/log/scan_log.json"
