@@ -105,9 +105,9 @@ def check_changes(key):
                 with open(full_path, "rb") as f:
                     file_data = f.read()
                     file_hash = hashlib.md5(file_data).hexdigest()
-                    current_hashes[full_path] = file_hash  # Düzeltildi: Tam yol kullanılıyor
+                    current_hashes[full_path] = file_hash   
                     
-                    if full_path in known_hashes:  # Düzeltildi: Tam yol ile kontrol
+                    if full_path in known_hashes:   
                         if known_hashes[full_path] != file_hash:
                             print(colored(f"{full_path}: The file has changed!  ", "red"))
                         else:
